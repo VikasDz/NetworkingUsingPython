@@ -3,9 +3,9 @@ from vidstream import StreamingServer
 import threading
 import time 
 
-Pc1 = StreamingServer('Your 1st Local IP', 9999)
+Pc1 = StreamingServer('Your 1st Local IP', 8090)
 #For Know Local IP Address of Your Local Pc ---> ifconfig
-Pc2 = CameraClient('Your 2nd Local IP', 9999)
+Pc2 = CameraClient('Your 2nd Local IP', 9090)
 #Your 2nd Local IP Address Of Your Pc ---> ifconfig
 
 firstPc = threading.Thread(target=Pc1.start_server)
